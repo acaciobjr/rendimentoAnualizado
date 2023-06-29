@@ -65,23 +65,23 @@ tk.Label(root, text="Oitavo ano:").grid(row=12, column=0)
 tk.Label(root, text="Nono ano:").grid(row=13, column=0)
 tk.Label(root, text="Décimo ano:").grid(row=14, column=0)
 
-# Cria uma caixa de texto
+#Cria uma caixa de texto
 tk.Label(root, text="Digite o valor que você deseja saber ano a ano o montante aplicado em LCI na taxa anual desejada:").grid(row=0, column=0)
 
-# Cria campos de entrada
+#Cria campos de entrada
 num1 = tk.Entry(root)
 num2 = tk.Entry(root)
 
 
-# Define a posição dos campos de entrada
+#posição dos campos de entrada
 num1.grid(row=1, column=1)
 num2.grid(row=2, column=1)
 
-# Cria botão
+#botão
 #tk.Button(root, text="Somar", command=somar).grid(row=4, column=0)
 tk.Button(root, text="montante", command=lambda: [primeiroAno(), segundoAno(), terceiroAno(), quartoAno(), quintoAno(), sextoAno(), setimoAno(), oitavoAno(), nonoAno(), decimoAno()]).grid(row=4, column=1)
 
-# Cria uma caixa de texto para exibir o resultado
+#Cria uma caixa de texto para exibir o resultado
 resultado = tk.Entry(root)
 resultado.grid(row=5, column=1)
 resultado1 = tk.Entry(root)
@@ -104,5 +104,5 @@ resultado9 = tk.Entry(root)
 resultado9.grid(row=14, column=1)
 
 
-# Inicia a janela principal
+#Inicia a janela principal
 root.mainloop()
